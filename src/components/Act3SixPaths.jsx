@@ -374,7 +374,7 @@ export function Act3SixPaths() {
       <div ref={stageRef} className={`paths__stage ${lit ? 'lit' : ''}`} id="pathsStage">
         <div
           className="paths__reveal"
-          style={{ backgroundImage: `url('/frames/storm.jpg')` }}
+          style={{ backgroundImage: `url('frames/storm.jpg')` }}
           aria-hidden="true"
         ></div>
         <div className="paths__overlay" aria-hidden="true"></div>

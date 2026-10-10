@@ -6,7 +6,7 @@ export function useSound() {
   const audioElRef = useRef(null);
 
   useEffect(() => {
-    const audio = new Audio('/pain_audio.mp3');
+    const audio = new Audio('pain_audio.mp3');
     audio.preload = 'auto';
     audio.loop = true;
     audioElRef.current = audio;

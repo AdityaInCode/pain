@@ -56,10 +56,10 @@ export default function App() {
 
     const promises = [];
     for (let i = 1; i <= MAIN_COUNT; i++) {
-      promises.push(loadImage(`/frames/main/${pad(i)}.jpg`, mFrames, i - 1));
+      promises.push(loadImage(`frames/main/${pad(i)}.jpg`, mFrames, i - 1));
     }
     for (let i = 1; i <= EYE_COUNT; i++) {
-      promises.push(loadImage(`/frames/eyes/${pad(i)}.jpg`, eFrames, i - 1));
+      promises.push(loadImage(`frames/eyes/${pad(i)}.jpg`, eFrames, i - 1));
     }
 
     Promise.all(promises).then(() => {
